@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>Advanced Digital Clock</title>
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h1>Advanced Digital Clock</h1>
+  <div id="clock">--:--:--</div>
+  <div id="worldClocks"></div>
+  <div>
+    <button data-theme="light">Light</button>
+    <button data-theme="dark">Dark</button>
+    <button data-theme="neon">Neon</button>
+  </div>
+  <div id="modeButtons">
+    <button data-mode="clock">Clock</button>
+    <button data-mode="stopwatch">Stopwatch</button>
+    <button data-mode="timer">Timer</button>
+  </div>
+  <div id="stopwatch" style="display:none;">
+    <h2>Stopwatch</h2>
+    <div id="stopwatch-display">00:00:00</div>
+    <button id="startStopwatch">Start</button>
+    <button id="resetStopwatch">Reset</button>
+  </div>
+  <div id="timer" style="display:none;">
+    <h2>Timer</h2>
+    <input type="number" id="timerMinutes" placeholder="Minutes">
+    <div id="timer-display">00:00</div>
+    <button id="startTimer">Start</button>
+    <button id="resetTimer">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
